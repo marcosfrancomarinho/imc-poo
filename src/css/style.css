@@ -1,0 +1,56 @@
+#group-card {
+    justify-content: space-between;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.card {
+    width: 125px;
+
+}
+
+.card:nth-child() {
+    animation: rotate 0.2s infinite linear;
+}
+
+.card-animate {
+    animation: rotate 0.2s infinite linear;
+}
+
+@media screen and (max-width:965px) {
+    #group-card {
+        justify-content: center;
+        gap: 20px
+    }
+
+    .card {
+        width: 150px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+        border-color:#ff0000;
+    }
+
+    25% {
+        transform: rotateZ(2deg)
+    }
+
+    50% {
+        transform: rotateZ(0deg)
+    }
+
+    75% {
+        transform: rotateZ(-2deg)
+    }
+
+    100% {
+        transform: rotateZ(0deg)
+    }
+}
