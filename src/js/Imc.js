@@ -8,7 +8,7 @@ class Imc {
             4: "Acima do peso",
             5: "Obesidade I",
             6: "Obesidade II",
-            7: "Obeseidade III (mórbida)"
+            7: "Obesidade III (mórbida)"
         }
     }
     _(selector) {
